@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author " content ="Maryam Ibrahim Muhammad "
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="my.css" />
+</head>
+<style>
+   /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b3d91;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-tile {
+  background: white;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-tile p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #0b3d91;
+  color: white;
+}
+
+#profile-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #0b3d91;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+#profile-link:hover {
+  background: #e0e0e0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  img{
+      width: 200px;
+      height: 300px;
+      border-radius: 10;
+  }
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+  <img src="website.jpg" alt="My Picture">   
+    <h1>Hello, I'm Maryam Ibrahim Muhammad  </h1>
+    <p>Web Developer | Designer | Dreamer</p>
+  </section>
+  
+  
+<!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Maryam Ibrahim Muhammad, a web developer and a dreamer.I enjoy creating websites and i love learning new technologies and always aim to improve my skills.</p>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-tile">
+        <a href="https://yourprojectlink.com" target="_blank"></a>
+          <img src="officialwebsite.jpg" width="300" height="200" alt="Projec Screenshot"/>
+          <img src="maryam.jpg" width="300" height="200" alt=" project two">
+      </div>
+      
+      i
+   <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/p8B0ilMAZgM" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+ 
+  <div>
+  <iframe width="300" height="60" src="https://vocaroo.com/embed/1btIvFmGxOVl?autoplay=0" frameborder="0" allow="autoplay"></iframe>
+</div>
+ </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>Feel free to reach out or check out my profile:</p>
+    <a 
+      href="https://github.com/yourusername" 
+      target="_blank" 
+      id="profile-link"
+    >
+      Visit My GitHub
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Maryam Ibrahim Muhammad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
